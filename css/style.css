@@ -134,7 +134,7 @@
 
     /* Section */
     .section {
-        padding: 80px 0;
+        padding: 30px 0 80px;
     }
 
     /* Showcase */
@@ -286,4 +286,262 @@
         .showcase-text h2 {
             font-size: 1.6rem;
         }
+    }
+
+    /* Booking form */
+    .container h1,
+    .container p {
+        text-align: center;
+    }
+
+    .form-card {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    fieldset {
+        padding: 24px;
+        background: #ccb8a7;
+        border: 1px solid #ccb8a7;
+        border-radius: 12px;
+    }
+
+    legend {
+        padding: 0 10px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #ff6b86;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .form-group {
+        margin-bottom: 14px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #374151;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 14px 16px;
+        font-family: inherit;
+        font-size: 15px;
+        background: #fff;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #9ca3af;
+    }
+
+    .form-group select {
+        cursor: pointer;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: #ff6b86;
+        box-shadow: 0 0 0 4px rgba(255, 107, 134, 0.18);
+    }
+
+    .form-group textarea {
+        min-height: 110px;
+        resize: vertical;
+    }
+
+
+    .form-error {
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #dc2626;
+    }
+
+
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    /* Primary Button */
+
+    .btn-primary {
+        color: #fff;
+        background: #ff6b86;
+    }
+
+    .btn-primary:hover {
+        background: #e65b76;
+        transform: translateY(-2px);
+    }
+
+    /* Outline Button */
+
+    .btn-outline {
+        color: #ff6b86;
+        background: transparent;
+        border: 1px solid #ff6b86;
+    }
+
+    .btn-outline:hover {
+        color: #fff;
+        background: #ff6b86;
+        transform: translateY(-2px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+        .section {
+            padding: 20px 0 50px;
+        }
+
+        .container {
+            padding: 0 15px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+
+        .section-desc {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .form-card {
+            max-width: 100%;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        fieldset {
+            padding: 18px;
+        }
+
+        legend {
+            font-size: 1.4rem;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        .form-actions {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-actions .btn {
+            width: 100%;
+        }
+    }
+
+    /* ==========================
+   RIWAYAT
+========================== */
+
+    .toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #datacount {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    }
+
+    .data-table th {
+        background:#ccb8a7;
+        color: white;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .data-table td {
+        padding: 14px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .data-table tbody tr:hover {
+        background: #f8fafc;
+    }
+
+    .empty-state {
+        display: none;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .empty-state h3 {
+        margin-bottom: 10px;
+    }
+
+    .empty-state p {
+        margin-bottom: 25px;
     }

@@ -26,7 +26,7 @@
 
             <nav>
                 <ul class="navmenu">
-                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="index.html">Beranda</a></li>
                     <li><a href="#event">Event</a></li>
                     <li><a href="pesantiket.html" class="Aktif">Pesan Tiket</a></li>
                     <li><a href="#about">Tentang Kami</a></li>
@@ -55,8 +55,8 @@
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="nim">No Hp</label>
-                                <input type="text" id="no hp" name="no hp" placeholder="Contoh: +623456789"
+                                <label for="Phone">Phone</label>
+                                <input type="text" id="Phone" name="Phone" placeholder="Contoh: +623456789"
                                     maxlength="13">
                             </div>
                             <div class="form-group">
@@ -74,24 +74,29 @@
                             <div class="form-group">
                                 <label for="tiket">Jenis Event</label>
                                 <select id="tiket" name="tiket">
-                                    <option value="">— Pilih Event —</option>
-                                    <option value="">🎸Konser Musik</option>
-                                    <option value="">🍴Festival Kuliner</option>
-                                    <option value="">🧑‍🎨Workshop Digital</option>
-                                    <option value="">💻Seminar Bisnis</option>
+                                    <option>— Pilih Event —</option>
+                                    <option>🎸Konser Musik</option>
+                                    <option>🍴Festival Kuliner</option>
+                                    <option>🧑‍🎨Workshop Digital</option>
+                                    <option>💻Seminar Bisnis</option>
                                 </select>
                             </div>
 
                         </div>
 
                         <div class="form-group">
-                            <label for="keterangan">Keterangan (opsional)</label>
-                            <textarea id="keterangan" name="keterangan" rows="3"></textarea>
-                        </div>
+                            <label for="kategori">Kategori Tiket</label>
+                            <select id="kategori" name="kategori">
+                                <option value="">Pilih Kategori Tiket</option>
+                                <option>VIP</option>
+                                <option>Reguler</option>
+                                <option>Mahasiswa</option>
+                            </select>
 
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">⬇️ Pesan Sekarang</button>
-                            <button type="reset" class="btn btn-outline">↺ Reset</button>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">⬇️ Pesan Sekarang</button>
+                                <button type="reset" class="btn btn-outline">↺ Reset</button>
+                            </div>
                         </div>
                     </fieldset>
                 </form>
@@ -106,7 +111,7 @@
             <p>Instagram: @eventtictac</p>
         </div>
     </footer>
-    
+
     <script src="js/script.js"></script>
 
 </body>
