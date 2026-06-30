@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajukan Layanan — SILA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Awal header dan navigasi -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">🎟️ EventTicTac</a>
+            <input type="checkbox" id="navtoggle" class="nav-toggle">
+            <label for="navtoggle" class="navtoggleMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+                <ul class="navmenu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#event">Event</a></li>
+                    <li><a href="pesantiket.html" class="Aktif">Pesan Tiket</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="riwayat.html">Riwayat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Selamat Datang di EventTicTac</h1>
+                <p class="section-desc">Lengkapi form di bawah untuk pemesanan tiket Anda.</p>
+
+                <form id="formPengajuan" class="form-card">
+                    <fieldset>
+                        <legend>Data Pengajuan</legend>
+
+                        <p id="formError" class="form-error"></p>
+
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nim">No Hp</label>
+                                <input type="text" id="no hp" name="no hp" placeholder="Contoh: +623456789"
+                                    maxlength="13">
+                            </div>
+                            <div class="form-group">
+                                <label for="prodi">Email</label>
+                                <input type="text" id="email" name="email" placeholder="eventtictac@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal Pengajuan</label>
+                            <input type="date" id="tanggal" name="tanggal">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tiket">Jenis Event</label>
+                                <select id="tiket" name="tiket">
+                                    <option value="">— Pilih Event —</option>
+                                    <option value="">🎸Konser Musik</option>
+                                    <option value="">🍴Festival Kuliner</option>
+                                    <option value="">🧑‍🎨Workshop Digital</option>
+                                    <option value="">💻Seminar Bisnis</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="keterangan">Keterangan (opsional)</label>
+                            <textarea id="keterangan" name="keterangan" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">⬇️ Pesan Sekarang</button>
+                            <button type="reset" class="btn btn-outline">↺ Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2026 EventTicTac | All Rights Reserved</p>
+            <p>Email: eventtictac@gmail.com</p>
+            <p>Instagram: @eventtictac</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
